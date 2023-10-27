@@ -1,0 +1,20 @@
+{
+    "name": "ascetik/map",
+    "description": "Self-made Map implementation",
+    "type": "library",
+    "require": {
+        "ascetik/box": "^0.1.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Ascetik\\Map\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ascetik",
+            "email": "ascetik@free.fr"
+        }
+    ]
+}

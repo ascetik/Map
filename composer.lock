@@ -1,0 +1,99 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "bf1f69ef219a129eb699ed7a0e01d373",
+    "packages": [
+        {
+            "name": "ascetik/box",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ascetik/box.git",
+                "reference": "c21b16d1f2ff4d8ef45f1967a2538d6f046e79ed"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ascetik/box/zipball/c21b16d1f2ff4d8ef45f1967a2538d6f046e79ed",
+                "reference": "c21b16d1f2ff4d8ef45f1967a2538d6f046e79ed",
+                "shasum": ""
+            },
+            "require": {
+                "ascetik/container-core": "^0.1.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Ascetik\\Box\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "ascetik",
+                    "email": "ascetik@free.fr"
+                }
+            ],
+            "description": "SplObjectStorage extension",
+            "support": {
+                "issues": "https://github.com/ascetik/box/issues",
+                "source": "https://github.com/ascetik/box/tree/v0.1.0"
+            },
+            "time": "2023-10-26T20:09:11+00:00"
+        },
+        {
+            "name": "ascetik/container-core",
+            "version": "v0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ascetik/container-core.git",
+                "reference": "7227edc61738dae8a06faa7efa3e0e456393ee96"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ascetik/container-core/zipball/7227edc61738dae8a06faa7efa3e0e456393ee96",
+                "reference": "7227edc61738dae8a06faa7efa3e0e456393ee96",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.0|^8.1|^8.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Ascetik\\ContainerCore\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "ascetik",
+                    "email": "ascetik@free.fr"
+                }
+            ],
+            "description": "Self-made container core package",
+            "support": {
+                "issues": "https://github.com/ascetik/container-core/issues",
+                "source": "https://github.com/ascetik/container-core/tree/v0.1.1"
+            },
+            "time": "2023-10-26T19:00:17+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
+}
