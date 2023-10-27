@@ -3,7 +3,8 @@
     "description": "Self-made Map implementation",
     "type": "library",
     "require": {
-        "ascetik/box": "^0.1.0"
+        "ascetik/box": "^0.1.0",
+        "ascetik/container-ext": "^0.1.0"
     },
     "license": "MIT",
     "autoload": {

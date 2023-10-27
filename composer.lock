@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bf1f69ef219a129eb699ed7a0e01d373",
+    "content-hash": "247547687e33b4426234ce7df45cfaa9",
     "packages": [
         {
             "name": "ascetik/box",
@@ -85,6 +85,46 @@
                 "source": "https://github.com/ascetik/container-core/tree/v0.1.1"
             },
             "time": "2023-10-26T19:00:17+00:00"
+        },
+        {
+            "name": "ascetik/container-ext",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ascetik/container-ext.git",
+                "reference": "621fcbaf3902759204c0329ac8207910b4ee411a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ascetik/container-ext/zipball/621fcbaf3902759204c0329ac8207910b4ee411a",
+                "reference": "621fcbaf3902759204c0329ac8207910b4ee411a",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.0|^8.1|^8.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Ascetik\\ContainerExt\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "ascetik",
+                    "email": "ascetik@free.fr"
+                }
+            ],
+            "description": "Extensions for Maps and Sets",
+            "support": {
+                "issues": "https://github.com/ascetik/container-ext/issues",
+                "source": "https://github.com/ascetik/container-ext/tree/v0.1.0"
+            },
+            "time": "2023-10-27T16:11:19+00:00"
         }
     ],
     "packages-dev": [],
