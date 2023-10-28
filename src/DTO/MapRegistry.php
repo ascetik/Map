@@ -1,5 +1,17 @@
 <?php
 
+/**
+ * This is part of the ascetik/map package
+ *
+ * @package    Map
+ * @category   Data Transfer Object
+ * @license    https://opensource.org/license/mit/  MIT License
+ * @copyright  Copyright (c) 2023, Vidda
+ * @author     Vidda <vidda@ascetik.fr>
+ */
+
+declare(strict_types=1);
+
 namespace Ascetik\Map\DTO;
 
 use Ascetik\Box\Box;
@@ -8,7 +20,12 @@ use Ascetik\ContainerExt\Types\ContainerKey;
 use Ascetik\ContainerExt\Types\ContainerValue;
 use Ascetik\ContainerExt\Values\MixedValue;
 
-class MapBox
+/**
+ * Map elements registry
+ *
+ *
+ */
+class MapRegistry
 {
     /**
      * @var Box<ContainerKey,ContainerValue>
@@ -20,7 +37,7 @@ class MapBox
         $this->box = new Box();
     }
 
-    public function content():ReadonlyMap
+    public function content(): ReadonlyMap
     {
         return new ReadonlyMap($this->box);
     }
@@ -69,28 +86,26 @@ class MapBox
         $this->box->detach($key);
     }
 
-    public function getKeys():array
+    public function getKeys(): array
     {
         $keys = [];
         $this->box->each(
-            function(StringKey $key) use (&$keys){
+            function (StringKey $key) use (&$keys) {
                 $keys[] = $key->id();
             }
         );
         return $keys;
-
     }
 
-    public function getValues():array
+    public function getValues(): array
     {
         $values = [];
         $this->box->each(
-            function(StringKey $key) use (&$values){
+            function (StringKey $key) use (&$values) {
                 $values[] = $this->box->offsetGet($key)->content();
             }
         );
         return $values;
-
     }
 
     private function getKey(string $key): ?StringKey
