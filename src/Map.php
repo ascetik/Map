@@ -78,7 +78,7 @@ class Map
         return $this->container->content();
     }
 
-    public static function from(iterable $iterable): self
+    public static function from(array $iterable): self
     {
         $map = new self();
         foreach ($iterable as $key => $value) {

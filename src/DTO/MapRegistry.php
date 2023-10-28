@@ -22,8 +22,9 @@ use Ascetik\ContainerExt\Values\MixedValue;
 
 /**
  * Map elements registry
+ * using a Box to register keys and values
  *
- *
+ * @version 1.0.0
  */
 class MapRegistry
 {
