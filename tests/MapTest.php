@@ -47,16 +47,46 @@ class MapTest extends TestCase
         $this->assertSame(1, $this->map->size());
     }
 
-    public function testShouldRetrieveOnlyKeys()
+    public function testShouldRetrieveAllEntries()
     {
         $this->map->set('one', 'first test');
         $this->map->set('two', 'second test');
+        $entries = $this->map->entries();
+        $this->assertCount(2, $entries->toArray());
         $this->assertSame(
             [
                 'one' => 'first test',
                 'two' => 'second test',
             ],
-            $this->map->entries()->toArray()
+            $entries->toArray()
         );
+    }
+
+
+    public function testShouldRetrieveOnlyKeys()
+    {
+        $this->map->set('one', 'first test');
+        $this->map->set('two', 'second test');
+        $this->assertSame(['one', 'two'], $this->map->keys());
+    }
+
+    public function testShouldRetrieveOnlyValues()
+    {
+        $this->map->set('one', 'first test');
+        $this->map->set('two', 'second test');
+        $this->assertSame(
+            ['first test', 'second test'],
+            $this->map->values()
+        );
+    }
+
+    public function testShouldBeAbleToClearAllContent()
+    {
+        $this->map->set('one', 'first test');
+        $this->map->set('two', 'second test');
+        $this->assertSame(2,$this->map->size());
+        $this->map->clear();
+        $this->assertSame(0,$this->map->size());
+
     }
 }
