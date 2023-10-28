@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cc8516fbb858c29f35c44b6035a4f743",
+    "content-hash": "e83aadf3fbfa234dc1f03890e1f24de3",
     "packages": [
         {
             "name": "ascetik/box",
@@ -88,16 +88,16 @@
         },
         {
             "name": "ascetik/container-ext",
-            "version": "v0.1.0",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ascetik/container-ext.git",
-                "reference": "621fcbaf3902759204c0329ac8207910b4ee411a"
+                "reference": "ec21d1b014bbb49004835f530a035ac653763f49"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ascetik/container-ext/zipball/621fcbaf3902759204c0329ac8207910b4ee411a",
-                "reference": "621fcbaf3902759204c0329ac8207910b4ee411a",
+                "url": "https://api.github.com/repos/ascetik/container-ext/zipball/ec21d1b014bbb49004835f530a035ac653763f49",
+                "reference": "ec21d1b014bbb49004835f530a035ac653763f49",
                 "shasum": ""
             },
             "require": {
@@ -122,9 +122,9 @@
             "description": "Extensions for Maps and Sets",
             "support": {
                 "issues": "https://github.com/ascetik/container-ext/issues",
-                "source": "https://github.com/ascetik/container-ext/tree/v0.1.0"
+                "source": "https://github.com/ascetik/container-ext/tree/v1.0.0"
             },
-            "time": "2023-10-27T16:11:19+00:00"
+            "time": "2023-10-28T08:20:33+00:00"
         }
     ],
     "packages-dev": [
