@@ -84,9 +84,18 @@ class MapTest extends TestCase
     {
         $this->map->set('one', 'first test');
         $this->map->set('two', 'second test');
-        $this->assertSame(2,$this->map->size());
+        $this->assertSame(2, $this->map->size());
         $this->map->clear();
-        $this->assertSame(0,$this->map->size());
+        $this->assertSame(0, $this->map->size());
+    }
 
+    public function testBuildAMapFromAnArray()
+    {
+        $data = [
+            'one' => 'first test',
+            'two' => 'second test',
+        ];
+        $map = $this->map::from($data);
+        $this->assertSame('first test', $map->get('one'));
     }
 }
